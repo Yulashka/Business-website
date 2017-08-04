@@ -1,0 +1,387 @@
+/* MAIN */
+
+.white {
+    color: $body-bg;
+}
+
+.black {
+    color: $gray-base;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.padding-md {
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.padding {
+    padding-bottom: 3.5em;
+    padding-top: 4em;
+}
+
+.logo {
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover, a:focus {
+    color: black;
+}
+
+/* END OF MAIN */
+
+/* COVER */
+
+#cover {
+    background-image: url("../img/wall1.jpg");
+    min-height: 730px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frame {
+    width: 432px;
+    height: 839px;
+    object-fit: cover;
+}
+
+.hvr-fade {
+    background-color: $body-bg;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    color: $gray-base;
+}
+
+.hvr-fade:hover {
+    background-color: #4DD2FF !important;
+    color: $body-bg;
+    text-decoration: none;
+}
+
+
+.text-cover {
+    margin-top: 310px;
+    padding-bottom: 120px;
+    width: 400px;
+}
+
+#cover .block {
+    position: absolute;
+}
+
+#cover h1 {
+    word-spacing: 5px;
+    margin-bottom: 30px;
+    font-size: 41px;
+}
+
+#cover p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+/* END OF COVER */
+
+/* GRAY  */
+#gray {
+    background-color: #EAECF0;
+}
+
+#gray .text {
+    padding-top: 30px;
+    width: 360px;
+}
+
+#grayc h1 {
+    font-weight: bold;
+}
+
+#gray p {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.padding-bg {
+    padding-bottom: 8em;
+    padding-top: 8em;
+}
+/* END OF GRAY */
+
+/* ESSENCE  */
+
+.essence-h {
+    padding-top: 10em;
+    padding-bottom: 5em;
+    margin: 0px;
+}
+
+.essence-h h1 {
+    margin-top: 0px;
+}
+
+#essence p {
+    letter-spacing: 0.05em;
+}
+
+#essence .container {
+    border-bottom: 1px solid rgba(160, 160, 159, 1);
+}
+
+#essence .row{
+    margin-bottom: 5em;
+    }
+
+/* END OF ESSENCE */
+
+/* PEOPLE  */
+#people {
+    padding-bottom: 10em;
+    padding-top: 10em;
+}
+
+#people p {
+    font-size: 18px;
+}
+
+#people h2 {
+    padding-bottom: 30px;
+}
+
+#people .block {
+    padding-bottom: 5px;
+}
+
+#people img {
+    padding-top: 70px;
+}
+/* END OF PEOPLE */
+
+/* DOG  */
+#dog {
+    background-image: url("../img/dog11.jpg");
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dog .text {
+    padding-top: 200px;
+    font-weight: bold;
+}
+
+#dog p{
+    font-size: 1.3em;
+}
+
+#dog h2 {
+    margin-top: 0px;
+}
+/* END OF DOG */
+
+/* FEATURES  */
+.color {
+    background-color: $secondary;
+    margin-bottom: 20px;
+}
+
+#features h1 {
+    padding: 20px;
+    font-size: 32px;
+}
+
+#feautures {
+    padding-bottom: 70px;
+}
+/* END OF FEATURES */
+
+/* MESSAGE  */
+#message {
+    background-color: #F8F8F8 	;
+}
+
+#message span a {
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+
+#message h1 {
+    font-size: 46px;
+}
+
+#message a:hover {
+    text-decoration: none;
+    color: $primary;
+}
+/* END OF MESSAGE */
+
+/* FOOTER  */
+.ft {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gray {
+    color: gray !important;
+}
+
+.ft i,
+.ft a {
+    padding-right: 15px;
+}
+
+.ft a:hover {
+    text-decoration: none;
+    color: $gray-base;
+}
+
+/* END OF FOOTER */
+
+/* FLOATING NAVIGATION */
+
+
+.floating-menu {
+    font-family: sans-serif;
+    padding: 5px;;
+    width: 200px;
+    z-index: 100;
+    position: fixed;
+    right: 5%;
+    text-shadow: 1px 1px 2px $body-bg, 0 0 2px $body-bg, 0 0 5px $body-bg;
+    top: 35%;
+    text-align: right;
+    color: black;
+}
+
+.floating-menu a {
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.floating-menu span {
+    padding-right: 5px;
+}
+
+/* END OF FLOATING NAVIGATION */
+
+/* MEDIA QUERIES */
+@media  (max-width: 991px) { 
+    .text-cover {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+     .block {
+        position: inherit !important;
+    }
+    #gray img {
+        float: initial !important;
+    }
+    #gray .text {
+        padding-top: 0px;
+        width: inherit;
+    }
+    #cover .text-cover {
+        width: 100%;
+    }
+    
+    #cover .text-cover,
+    #gray .text,
+    #gray img,
+    #cover img,
+    #people img {
+        display: block !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    
+    #cover h1 {
+        font-size: 36px;
+    }
+    
+    .frame {
+        width: 322px;
+        height: 598px;
+    }
+    #gray .padding-bg {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .essence-h {
+        padding-top: 4em;
+    }
+    
+    #essence .col-md-3 {
+        padding-bottom: 70px;
+    }
+    /*#essence img {
+        width: 122px;
+        height: 121px;
+    } */
+    #people h2 {
+        padding-bottom: 1.5em;
+        font-size: 36px;
+    }
+    #people .block {
+        padding-bottom: 15px;
+    }
+    #people img {
+    padding-top: 50px;
+    }
+    #dog h2 {
+        font-size: 36px;
+    }
+    #dog p {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    #dog {
+        min-height: 600px;
+    }
+    .padding-md {
+        padding-bottom: 0; 
+        padding-top: 0;
+    }
+    #features .col-md-4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #message span a {
+        font-size: 1em;
+    }
+    #message h1 {
+        line-height: 1.2em;
+    }
+    #message p {
+        margin-top: 30px;
+    }
+    .ft a {
+        float: left !important;
+        padding-top: 10px;
+    }
+    #cover h1,
+    #cover p {
+        color: $gray-base;
+    }
+    #cover p {
+        font-weight: bold;
+        word-spacing: 4px;
+    }
+}
+
+ @media  (max-width: 435px) {
+     .floating-menu {
+         display: none;
+     }
+} 
+
+
+/* END OF MEDIA QUERIES */
